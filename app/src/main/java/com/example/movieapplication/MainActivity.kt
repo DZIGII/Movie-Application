@@ -3,13 +3,16 @@ package com.example.movieapplication
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import com.example.movieapplication.ui.screen.MovieScreen
 import com.example.movieapplication.ui.screen.main.MainScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MainScreen()
+            //MainScreen()
+
+            MovieScreen()
         }
     }
 }

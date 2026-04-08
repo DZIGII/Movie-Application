@@ -11,6 +11,7 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.foundation.lazy.items
+import androidx.compose.ui.graphics.Color
 import com.example.movieapplication.model.Genre
 import com.example.movieapplication.model.Movie
 import com.example.movieapplication.ui.components.MovieListItem
@@ -82,6 +83,7 @@ fun MainScreen() {
     )
 
     Scaffold(
+        containerColor = Color(0xFF121212),
         topBar = {
             TopAppBar(
                 title = { Text("Movies") }
